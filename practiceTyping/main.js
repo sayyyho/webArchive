@@ -55,6 +55,8 @@ function getWords(){
                 }
             })
             buttonChange('게임시작');
+            const randomIndex = Math.floor(Math.random()*words.length);
+            wordDisplay.innerText = words[randomIndex];
         })
         .catch(function (error) {
             // handle error
@@ -62,6 +64,7 @@ function getWords(){
         })
         
 }
+
 
 //단어일치체크
 function chcekMatch(){
@@ -75,11 +78,8 @@ function chcekMatch(){
         time = GAME_TIME;
         const randomIndex = Math.floor(Math.random()*words.length);
         wordDisplay.innerText = words[randomIndex];
-       
     }
 }
-
-
 
 function countDown(){
     time > 0 ? time -- : isPlaying = false;
