@@ -18,6 +18,13 @@ body {
     padding: 1rem;
 }
 
+a {
+    font-size: 40px;
+    text-decoration: none;
+    color : black;
+    white-space: nowrap;
+}
+
 .word-display {
     margin-top: 3rem;
     font-size: 80px;

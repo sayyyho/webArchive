@@ -24,8 +24,8 @@ var imageModelURL = 'https://teachablemachine.withgoogle.com/models/OJbk_sDSA/';
 var video; // 비디오
 var flippedVideo; // 조금 더 정제된 비디오 데이터
 
-var videoWidth = 600 // 내 웹캠 가로
-var videoHeight = 400 // 내 웹캠 세로
+var videoWidth = 800 // 내 웹캠 가로
+var videoHeight = 720 // 내 웹캠 세로
 
 var canvasWidth = 800 // 캔버스 가로
 var canvasHeight = 800 // 캔버스 세로
@@ -51,15 +51,15 @@ function setup() {
 
 
 function draw() {
-  background(50);
+  background(190);
   textSize(32);
-  text(result, canvasWidth/2 - 16, canvasHeight - 80);
+  text(result, canvasWidth/2 - 16, canvasHeight - 28);
   fill('white');
 
   // 박스 그리기
   
   // 웹캠 비디오 표시.
-  image(flippedVideo, 100, 200);
+  image(flippedVideo, 0, 0);
 }
 
 

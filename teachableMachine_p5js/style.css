@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background-color: #FDF5E6;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+a {
+    font-size: 50px;
+    text-decoration: none;
+    color : black;
+    white-space: nowrap;
+}
+
+.head {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
